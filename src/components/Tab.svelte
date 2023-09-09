@@ -5,6 +5,7 @@
 
   const { config } = getContext('tabbar');
   config(tabName);
+
 </script>
 
 <div>
