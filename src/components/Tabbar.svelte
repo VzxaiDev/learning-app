@@ -19,7 +19,7 @@
 
 <ul class="tabbar">
   {#each tabs as tab}
-    <li class:tabbar-tab-active={$currentTab === tab} class="tabbar-tab">{tab}</li>
+    <li on:click={() => currentTab.set(tab)} class:tabbar-tab-active={$currentTab === tab} class="tabbar-tab">{tab}</li>
   {/each}
 </ul>
 
@@ -33,6 +33,7 @@
     display: flex;
     flex-direction: row;
     gap: 10px;
+    padding: 0px;
   }
 
   .tabbar-tab{
@@ -47,5 +48,12 @@
   .tabbar-tab-active{
     background: black;
     color: white;
+  }
+
+  .content{
+    background: white;
+    border-radius: 10px;
+    height: 100%;
+    flex: 1;
   }
 </style>
