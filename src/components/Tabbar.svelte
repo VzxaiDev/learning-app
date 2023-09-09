@@ -23,7 +23,9 @@
   {/each}
 </ul>
 
-<slot />
+<div class="content">
+  <slot />
+</div>
 
 <style>
   .tabbar{
