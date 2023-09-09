@@ -1,18 +1,18 @@
 <script>
-  import { setContext, writeable } from 'svelte'
+  import { setContext } from 'svelte'
+  import { writable } from 'svelte/store';
 
   const tabs = [];
 
-  const currentTab = writeable();
+  const currentTab = writable('n/a');
 
   setContext('tabbar', {
     config: tabName => {
       tabs.push(tabName);
-      currentTab(tabName);
     },
     currentTab
-  })
+  });
 </script>
 
 <slot />
-<h1>Tabs: {tabs}, Current Tab: {currentTab}</h1>
+<h1>Tabs: {tabs}, Current Tab: {$currentTab} </h1>
