@@ -11,4 +11,6 @@
 
 <Tabbar>
 	<Tab tabName="Info"><p>Hello</p></Tab>
+	<Tab tabName="Match"><p>Hello</p></Tab>
+	<Tab tabName="Quiz"><p>Hello</p></Tab>
 </Tabbar>
