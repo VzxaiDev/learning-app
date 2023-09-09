@@ -3,11 +3,11 @@
 
   export let tabName = "Tab";
 
-  const { config } = getContext('tabbar');
+  const { config, currentTab } = getContext('tabbar');
   config(tabName);
 
 </script>
 
-<div>
+{#if $currentTab === tabName}
   <slot/>
-</div>
+{/if}
