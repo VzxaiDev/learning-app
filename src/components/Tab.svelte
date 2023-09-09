@@ -1,5 +1,10 @@
 <script>
-  export let tabName = "Tab"
+  import { getContext } from 'svelte'
+
+  export let tabName = "Tab";
+
+  const { config } = getContext('tabbar');
+  config(tabName);
 </script>
 
 <div>
