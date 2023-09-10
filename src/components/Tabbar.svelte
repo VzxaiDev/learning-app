@@ -39,10 +39,11 @@
   .tabbar-tab{
     list-style-type: none;
     margin: 0;
-    padding: 4px 16px 4px 16px;
-    border-radius: 10px;
+    padding: 8px 24px 8px 24px;
+    border-radius: 6px;
     background: white;
     cursor: pointer;
+    font-size: 25px;
   }
 
   .tabbar-tab-active{
