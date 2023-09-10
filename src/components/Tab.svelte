@@ -5,7 +5,6 @@
 
   const { config, currentTab } = getContext('tabbar');
   config(tabName);
-
 </script>
 
 {#if $currentTab === tabName}

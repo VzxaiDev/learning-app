@@ -23,7 +23,7 @@
   {/each}
 </ul>
 
-<div class="content">
+<div class="content glass">
   <slot />
 </div>
 
@@ -40,21 +40,39 @@
     list-style-type: none;
     margin: 0;
     padding: 8px 24px 8px 24px;
-    border-radius: 6px;
+    border-radius: 40px;
     background: white;
     cursor: pointer;
     font-size: 25px;
-  }
-
-  .tabbar-tab-active{
-    background: black;
-    color: white;
+    transition: all 0.3s;
+    
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 1rem 0 rgb(0 0 0 / 49%);
+    user-select: none;
   }
 
   .content{
-    background: white;
     border-radius: 10px;
     height: 100%;
     flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
+
+  .glass{
+    backdrop-filter: blur(5px);
+    background-color: rgb(255 255 255 / 15%);
+    box-shadow: 0 0 1rem 0 rgb(0 0 0 / 49%);
+  }
+
+  .tabbar-tab:hover{
+   /* box-shadow: none; */
+  }
+
+  .tabbar-tab-active{
+    color: white;
+    background-color: rgb(0 0 0 / 15%);
+  }
+
 </style>
