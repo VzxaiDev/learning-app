@@ -10,7 +10,7 @@
 -->
 
 <Tabbar>
-	<Tab tabName="Info"><p>Click a mode to start practcing.</p></Tab>
+	<Tab tabName="Info" active><p>Click a mode to start practcing.</p></Tab>
 	<Tab tabName="Match"><p>Match</p></Tab>
 	<Tab tabName="Quiz"><p>Quiz</p></Tab>
 	<Tab tabName="Flashcards"><p>Flashcards</p></Tab>

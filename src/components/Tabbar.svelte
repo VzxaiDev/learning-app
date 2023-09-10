@@ -9,13 +9,10 @@
   setContext('tabbar', {
     config: tabName => {
       tabs = [...tabs, tabName]
-      currentTab.set(tabName);
     },
     currentTab
   });
 </script>
-
-<!-- <h1>Tabs: {tabs}, Current Tab: {$currentTab} </h1> -->
 
 <ul class="tabbar">
   {#each tabs as tab}
