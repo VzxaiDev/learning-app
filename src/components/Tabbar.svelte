@@ -63,12 +63,7 @@
     box-shadow: 0 0 1rem 0 rgb(0 0 0 / 49%);
   }
 
-  .tabbar-tab:hover{
-   /* box-shadow: none; */
-  }
-
   .tabbar-tab-active{
-    color: white;
     background-color: rgb(0 0 0 / 15%);
   }
 
