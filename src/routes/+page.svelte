@@ -4,12 +4,6 @@
 	import StartBlock from '../components/StartBlock.svelte'
 </script>
 
-<!--
-	<Tabbar>
-		<Tab tabName="Info"><element></element></Tab>
-</Tabbar>
--->
-
 <Tabbar>
 	<Tab tabName="Info" active><p>Click a mode to start practcing.</p></Tab>
 	<Tab tabName="Match">

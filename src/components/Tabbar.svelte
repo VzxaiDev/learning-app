@@ -40,7 +40,7 @@
     border-radius: 40px;
     background: white;
     cursor: pointer;
-    font-size: 2.25rem;
+    font-size: 1.7rem;
     transition: all 0.3s;
     
     backdrop-filter: blur(5px);
