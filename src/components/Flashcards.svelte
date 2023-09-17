@@ -2,15 +2,21 @@
   let showingTerm = true;
   let term = "une pomme";
   let def = "a apple";
+  let text = term;
 
+  $:{
+    setTimeout(()=> {
+      showingTerm ? text = term : text = def;
+    }, 250);
+  }
 </script>
 
 <div class="card-wrapper">
-  <div on:click={() => showingTerm = !showingTerm}  class="card glass">
-    <h1 class="term">
-      {showingTerm ? term : def}
+  <button on:click={() => showingTerm = !showingTerm} class:r180={showingTerm} class:r0={!showingTerm}  class="card glass">
+    <h1 class="term" class:r180={showingTerm} class:r0={!showingTerm}>
+      {text}
     </h1>
-  </div>
+  </button>
   <div class="buttons">
     <button class="last glass"></button>
     <button class="flip glass"></button>
@@ -35,6 +41,7 @@
     height: 20rem;
     border-radius: 20px;
     user-select: none;
+    border: none;
 
     display: flex;
     justify-content: center;
@@ -63,5 +70,15 @@
     cursor: pointer;
 
     border: none;
+  }
+
+  .r180{
+    transition: 0.5s;
+    transform: rotateX(180deg);
+  }
+
+  .r0{
+    transition: 0.5s;
+    transform: rotateX(0deg);
   }
 </style>
