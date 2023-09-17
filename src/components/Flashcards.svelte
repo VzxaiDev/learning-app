@@ -1,10 +1,15 @@
 <script>
+  let showingTerm = true;
+  let term = "une pomme";
+  let def = "a apple";
 
 </script>
 
 <div class="card-wrapper">
-  <div class="card glass">
-    <h1 class="term">Demo</h1>
+  <div on:click={() => showingTerm = !showingTerm}  class="card glass">
+    <h1 class="term">
+      {showingTerm ? term : def}
+    </h1>
   </div>
   <div class="buttons">
     <button class="last glass"></button>
@@ -29,6 +34,7 @@
     width: 32rem;
     height: 20rem;
     border-radius: 20px;
+    user-select: none;
 
     display: flex;
     justify-content: center;
