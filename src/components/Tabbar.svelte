@@ -1,7 +1,6 @@
 <script>
   import { setContext } from 'svelte'
   import { writable } from 'svelte/store';
-
   let tabs = [];
 
   const currentTab = writable('n/a');
@@ -16,7 +15,7 @@
 
 <ul class="tabbar">
   {#each tabs as tab}
-    <li on:click={() => currentTab.set(tab)} class:tabbar-tab-active={$currentTab === tab} class="tabbar-tab">{tab}</li>
+    <button on:click={() => currentTab.set(tab)} class:tabbar-tab-active={$currentTab === tab} class="tabbar-tab">{tab}</button>
   {/each}
 </ul>
 
@@ -46,6 +45,7 @@
     backdrop-filter: blur(5px);
     box-shadow: 0 0 1rem 0 rgb(0 0 0 / 49%);
     user-select: none;
+    border: none;
   }
 
   .content{

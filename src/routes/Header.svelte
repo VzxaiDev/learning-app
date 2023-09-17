@@ -4,7 +4,7 @@
 
 <div class="header">
 	<h1 class="title">{title}</h1>
-	<div class="pfp"></div>
+	<button class="pfp"></button>
 </div>
 
 <style>
@@ -23,6 +23,7 @@
 	background-size: 45px 45px;
 	border-radius: 10px;
 	cursor:pointer;
+	border: none;
 }
 .title{
 	width: 100%;

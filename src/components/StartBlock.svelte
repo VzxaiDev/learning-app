@@ -7,8 +7,7 @@
 
 {#if active}
   <div>
-    <h1>Sorry, This mode isn't avalible at the momment</h1>
-    <h3> We are working on bringing it back as soon as possible</h3>
+    <slot />
   </div>
 {:else}
   <div class="message">
