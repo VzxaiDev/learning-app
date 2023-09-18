@@ -27,7 +27,6 @@
 		width: 100%;
 		margin: 0 auto;
 		box-sizing: border-box;
-		max-width: 64rem;
 	}
 
 	footer {
