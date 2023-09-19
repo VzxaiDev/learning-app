@@ -1,10 +1,15 @@
 <script>
+	import { goto } from '$app/navigation';
+
 	export let title = "Title";
 </script>
 
 <div class="header">
 	<h1 class="title">{title}</h1>
-	<button class="pfp"></button>
+	<button on:click={ () => {
+		const input = prompt("Enter set id to practice: (This should be a 4-digit number)");
+		goto(`?${input}`);
+	}} class="pfp"></button>
 </div>
 
 <style>
