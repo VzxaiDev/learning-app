@@ -8,7 +8,7 @@
 	<h1 class="title">{title}</h1>
 	<button on:click={ () => {
 		const input = prompt("Enter set id to practice: (This should be a 4-digit number)");
-		goto(`?${input}`);
+		goto(`?id=${input}`);
 	}} class="pfp"></button>
 </div>
 

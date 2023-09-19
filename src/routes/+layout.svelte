@@ -1,10 +1,12 @@
 <script>
 	import Header from './Header.svelte';
 	import './styles.css';
+
+	export let data;
 </script>
 
 <div class="app">
-	<Header title="French Unit 6" />
+	<Header title="Could not get title" />
 
 	<main>
 		<slot />
