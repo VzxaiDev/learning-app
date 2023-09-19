@@ -3,10 +3,11 @@
 	import './styles.css';
 
 	export let data;
+	const title = data.item.set.title ? data.item.set.title : "Error: Could not get set title";
 </script>
 
 <div class="app">
-	<Header title="Could not get title" />
+	<Header {title} />
 
 	<main>
 		<slot />
