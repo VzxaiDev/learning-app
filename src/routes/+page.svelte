@@ -3,6 +3,7 @@
 	import Tabbar from '../components/Tabbar.svelte'
 	import StartBlock from '../components/StartBlock.svelte'
 	import Flashcards from '../components/Flashcards.svelte'
+	import FlashcardSlides from '../components/FlashcardSlides.svelte'
 
 	import { page } from '$app/stores';
   import { goto } from "$app/navigation";	
@@ -23,7 +24,11 @@
 		</StartBlock>
 	</Tab>
 	<Tab tabName="Quiz"><p>Quiz</p></Tab>
-	<Tab tabName="Flashcards"><Flashcards /></Tab>
+	<Tab tabName="Flashcards">
+		<FlashcardSlides let:props let:showingTerm>
+				<Flashcards {...props} {showingTerm} />
+		</FlashcardSlides>
+	</Tab>
 </Tabbar>
 
 <style>
